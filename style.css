@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#game_end {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    display: none;
+}
+
+/* https://getbootstrap.com/docs/4.0/components/buttons/ */
+#game_end button {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    user-select: none;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+#game_end a {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    user-select: none;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+#scoreboard {
+    margin: 0px 30px 0px 30px;
+    height: 6%;
+    line-height: 250%;
+    vertical-align: center;
+}
+
+#score {
+    float: right;
+}
+
+#notification {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    display: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#top_shelf, #bottom_shelf {
+    height: 47%;
+    width: 100%;
+}
+
+#bottom_shelf {
+    background-color: #f7f7f7;
+}
+
+/* https://stackoverflow.com/questions/18781713/css-divide-width-100-to-3-column */
+#top_shelf {
+    display: flex;
+    height: 47%;
+}
+
+#top_shelf > div {
+    flex-grow: 1;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#top_shelf > div h2 {
+    font-weight: lighter;
+}
+    
+#top_shelf > div:first-of-type { background-color: #454547; }
+#top_shelf > div:nth-of-type(2) {  background-color: #459cad; }
+#top_shelf > div:nth-of-type(3) {  background-color: #709c4c; }
+
+#bottom_shelf img {
+    position: absolute;
+    cursor: move;
+}
